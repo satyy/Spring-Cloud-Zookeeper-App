@@ -17,7 +17,7 @@ Steps to run the application:
 5. run `sh run-app.sh` to build and run the appliaction.
 6. once the application starts, run the below CURL command which will give
            Greeting meesage using two properties -> 
-              1. greeting.meesage = "Hello" and, 
+              1. greeting.meesage = "Hello"
               2. greeting.name = "Satyam" 
            from the zookeeper.
         
@@ -32,5 +32,6 @@ Steps to verify auto refresh of property in the application:
     3. Logs of application will show the refresh.keys with the name of property changed. In this case, 
             - refresh.keys [greeting.name]
     4. run the below CURL command to get the response with updated property value
+    
          curl -X GET http://localhost:8081/greeting
             - Response -> "Hello Singh"
