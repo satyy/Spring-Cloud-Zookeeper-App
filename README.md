@@ -1,7 +1,7 @@
 # Spring-Cloud-Zookeeper-Sample
-- Useful in externalizing properties from the application in case of microservices.
+- Externalize configurations from application in microservice.
 - Use of Spring Cloud Zookeeper to bind application properties from zNodes present in Zookeeper.  
-- Auto Refresh of properties in the running Application on making any change of property value in the Zookeeper
+- Auto Refresh (update) of properties in the running Application on making any change of property value in the Zookeeper
               (No need for manually calling actuator's - refresh endpoint)
 
 Pre-requisite:
