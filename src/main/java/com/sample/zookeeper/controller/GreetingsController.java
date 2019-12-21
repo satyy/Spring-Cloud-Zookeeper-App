@@ -14,7 +14,9 @@ public class GreetingsController {
 
     @GetMapping("/greeting")
     public String displayProperties() {
-        return properties.getMessage().concat(properties.getName());
+        return properties.getMessage()
+                .concat(" ")
+                .concat(properties.getName());
     }
 
 }
