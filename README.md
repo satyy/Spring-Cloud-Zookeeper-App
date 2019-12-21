@@ -15,11 +15,10 @@ Steps to run the application:
 3. start zookeeper-shell and the use `create-zookeeper-app-zNodes.sh` to create all the required zNodes for the application.
 4. if zookeeper is running on different machine, change value for `spring.cloud.zookeeper.connect-string` in `bootstrap.properties`.
 5. run `sh run-app.sh` to build and run the appliaction.
-6. once the application starts, run the below CURL command which will give,
-           
-           Greeting meesage using two properties -> 
-              1. greeting.meesage = "Hello"
-              2. greeting.name = "Satyam" 
+6. once the application starts, run the below CURL command which will give, 
+           Greeting meesage using two properties ->  
+              1. greeting.meesage = "Hello" and,  
+              2. greeting.name = "Satyam"  
            from the zookeeper.
         
         curl -X GET http://localhost:8081/greeting
