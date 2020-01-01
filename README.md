@@ -4,12 +4,12 @@
 - Auto Refresh (update) of properties in the running Application on making any change of property value in the Zookeeper
               (No need for manually calling actuator's - refresh endpoint)
 
-Pre-requisite:
+## Pre-requisite:
 1. Java
 2. Gradle
 3. Zookeeper
 
-Steps to run the application: 
+## Steps to run the application: 
 1. Checkout repo.
 2. copy `create-zookeeper-app-zNodes.sh`from zookeeper_scripts directory of this project to `zookeeper's -> bin` folder.
 3. start zookeeper-shell and the use `create-zookeeper-app-zNodes.sh` to create all the required zNodes for the application.
@@ -28,7 +28,7 @@ Steps to run the application:
 -- Once the above curl request is successful, it means the properties are successfully binded with zNodes in zookeeper.
 
 
-Steps to verify auto refresh of property in the application:
+## Steps to verify auto refresh of property in the application:
 1. copy `change-name-zNode-value.sh` from zookeeper_scripts directory of this project to `zookeeper's -> bin` folder.
 2. start zookeeper-shell and the use `change-name-zNode-value.sh` which will change the value of zNode `greeting.name` from initial        value"Satyam" to new value "Singh".
 3. Logs of application will show the refresh.keys with the name of property changed. In this case, 
