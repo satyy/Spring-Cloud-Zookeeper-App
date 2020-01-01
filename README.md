@@ -25,7 +25,7 @@
            - Response -> "Hello Satyam"
 
 
--- Once the above curl request is successful, it means the properties are successfully binded with zNodes in zookeeper.
+- Once the above curl request is successful, it means the properties are successfully binded with zNodes in zookeeper.
 
 
 ## Steps to verify auto refresh of property in the application:
